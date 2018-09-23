@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hv12.ejercicio_1_temporizador.MainActivity">
+
+    <TextView
+        android:id="@+id/lblContador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="0 Seg"
+        android:textSize="28dp" />
+    <Button
+        android:id="@+id/btnIniciar"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/lblContador"
+        android:text="Iniciar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnPausar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnIniciar"
+        android:layout_centerHorizontal="true"
+        android:text="PAUSAR" />
+
+    <Button
+        android:id="@+id/btnReanudar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnPausar"
+        android:layout_centerHorizontal="true"
+        android:text="REANUDAR" />
+
+    <TextView
+        android:id="@+id/lblContar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="196dp"
+        android:text="Cuanto tiempo desea Contar (seg):" />
+
+    <EditText
+        android:id="@+id/editTextContar"
+        android:layout_width="124dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/btnIniciar"
+        android:layout_below="@+id/btnReanudar"
+        android:layout_marginStart="91dp"
+        android:ems="10"
+        android:inputType="number" />
+
+    <ProgressBar
+        android:id="@+id/pgbarHorizontal"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+
+</RelativeLayout>
